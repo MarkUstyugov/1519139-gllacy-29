@@ -24,23 +24,23 @@
             <ul class="site-navigation">
               <li class="site-navigation__item">
                 <a class="site-navigation__link" href="catalog.html">Каталог</a>
-                <!-- <ul class="site-navigation__sub-menu">
-            <li class="site-navigation__sub-menu-item">
-              <a class="site-navigation__sub-menu-link" href="#">Новинки</a>
-            </li>
-            <li class="site-navigation__sub-menu-item">
-              <a class="site-navigation__sub-menu-link" href="#">Сливочное</a>
-            </li>
-            <li class="site-navigation__sub-menu-item">
-              <a class="site-navigation__sub-menu-link" href="#">Щебеты</a>
-            </li>
-            <li class="site-navigation__sub-menu-item">
-              <a class="site-navigation__sub-menu-link" href="#">Фруктовый лед</a>
-            </li>
-            <li class="site-navigation__sub-menu-item">
-              <a class="site-navigation__sub-menu-link" href="#">Мелорин</a>
-            </li>
-          </ul> -->
+                <ul class="site-navigation__sub-menu">
+                  <li class="site-navigation__sub-menu-item">
+                    <a class="site-navigation__sub-menu-link" href="#">Новинки</a>
+                  </li>
+                  <li class="site-navigation__sub-menu-item">
+                    <a class="site-navigation__sub-menu-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="site-navigation__sub-menu-item">
+                    <a class="site-navigation__sub-menu-link" href="#">Щебеты</a>
+                  </li>
+                  <li class="site-navigation__sub-menu-item">
+                    <a class="site-navigation__sub-menu-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="site-navigation__sub-menu-item">
+                    <a class="site-navigation__sub-menu-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li class="site-navigation__item">
                 <a class="site-navigation__link" href="#">Доставка и оплата</a>
@@ -51,13 +51,13 @@
             </ul>
             <ul class="user-navigation">
               <li class="user-navigation__item">
-                <a class="user-navigation__button" href="#">Поиск</a>
+                <a class="user-navigation__button search-button" href="#"></a>
               </li>
               <li class="user-navigation__item">
-                <a class="user-navigation__button" href="#">Вход</a>
+                <a class="user-navigation__button login-button" href="#">Вход</a>
               </li>
               <li class="user-navigation__item">
-                <a class="user-navigation__button" href="#">Пусто</a>
+                <a class="user-navigation__button cart-button" href="#">Пусто</a>
               </li>
             </ul>
           </div>
@@ -83,9 +83,9 @@
             </li>
           </ul>
           <div class="slider__control">
-            <button class="slider__control-button" type="button">Слайд 1</button>
-            <button class="slider__control-button" type="button">Слайд 2</button>
-            <button class="slider__control-button" type="button">Слайд 3</button>
+            <button class="slider__control-button" type="button"></button>
+            <button class="slider__control-button" type="button"></button>
+            <button class="slider__control-button" type="button"></button>
           </div>
         </div>
         <div class="index-column main-wrapper__index-column">
@@ -206,7 +206,7 @@
             <a class="contacts__phone" href="tel:+788124502525">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)
           </p>
-          <button class="contacts__button button" type="button">Форма обратной связи</button>
+          <a class="contacts__button button" href="#" type="button">Форма обратной связи</a>
         </div>
       </section>
   </main>
@@ -288,29 +288,41 @@
           <a href="#">
             <img src="img/html-academy-logo.svg" alt="Логотип HTML Academy" width="108" height="39">
           </a>
-          <p class="copyright__text">Сделано в <span class="copyright__text-border">HTML Academy</span> &copy; 2019</p>
+          <p class="copyright__text">Сделано в <a class="copyright__link" href="#">HTML Academy</a> &copy; 2019</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- <section class="modal modal-login">
+  <section class="modal modal-login">
     <h2 class="visually-hidden">Личный кабинет</h2>
     <form action="" method="POST" id="form-login">
-      <input type="email" name="" id="" placeholder="email@example.com">
-      <input type="password" name="" id="" placeholder="******">
-      <button type="submit">Войти</button>
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
+      <p class="modal-login__input">
+        <label class="visually-hidden" for="login-login">Логин</label>
+        <input class="modal-login__login" type="email" name="login" id="login-login" placeholder="email@example.com">
+      </p>
+      <p class="modal-login__input">
+        <label class="visually-hidden" for="login-password">Пароль</label>
+        <input class="modal-login__password" type="password" name="password" id="login-password" placeholder="******">
+      </p>
+      <div class="modal-login__wrapper">
+        <button class="button" type="submit">Войти</button>
+        <div class="modal-login__inner-wrapper">
+          <a class="modal-login__link" href="#">Забыли пароль?</a>
+          <a class="modal-login__link" href="#">Новая регистрация</a>
+        </div>
+      </div>
     </form>
   </section>
 
   <section class="modal modal-search">
     <h2 class="visually-hidden">Поиск</h2>
-    <input type="search" placeholder="Крем-брюле">
+    <form action="" method="GET">
+      <input class="modal-search__search" type="search" placeholder="Крем-брюле">
+    </form>
   </section>
 
-  <section class="modal modal-feedback">
+  <!-- <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
     <p>Мы обязательно вам ответим!</p>
     <form action="" method="POST">

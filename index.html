@@ -12,7 +12,7 @@
   <title>Магазин морожного Gllacy</title>
 </head>
 
-<body class="page-body">
+<body class="page-body main-body site-slide-1">
   <header class="main-header">
     <div class="container">
       <div class="main-header-wrapper">
@@ -21,15 +21,15 @@
             <img class="logo__image" src="img/logo.svg" alt="Логотип" width="154" height="64">
           </a>
           <div class="navigation-wrapper">
-            <ul class="site-navigation">
+            <ul class="site-navigation navigation-wrapper__site-navigation">
               <li class="site-navigation__item">
-                <a class="site-navigation__link" href="catalog.html">Каталог</a>
+                <a class="site-navigation__link" href="#">Каталог</a>
                 <ul class="site-navigation__sub-menu">
                   <li class="site-navigation__sub-menu-item">
                     <a class="site-navigation__sub-menu-link" href="#">Новинки</a>
                   </li>
                   <li class="site-navigation__sub-menu-item">
-                    <a class="site-navigation__sub-menu-link" href="#">Сливочное</a>
+                    <a class="site-navigation__sub-menu-link" href="catalog.html">Сливочное</a>
                   </li>
                   <li class="site-navigation__sub-menu-item">
                     <a class="site-navigation__sub-menu-link" href="#">Щебеты</a>
@@ -54,7 +54,7 @@
                 <a class="user-navigation__button search-button" href="#"></a>
                 <section class="modal modal-search">
                   <h2 class="visually-hidden">Поиск</h2>
-                  <form action="" method="GET">
+                  <form action="https://echo.htmlacademy.ru" method="GET">
                     <label class="visually-hidden" for="search-input">Поиск</label>
                     <input class="modal-search__search" type="search" id="search-input" placeholder="Крем-брюле">
                   </form>
@@ -64,7 +64,7 @@
                 <a class="user-navigation__button login-button" href="#">Вход</a>
                 <section class="modal modal-login">
                   <h2 class="visually-hidden">Личный кабинет</h2>
-                  <form action="" method="POST" id="form-login">
+                  <form action="https://echo.htmlacademy.ru" method="POST" id="form-login">
                     <p class="modal-login__input">
                       <label class="visually-hidden" for="login-login">Логин</label>
                       <input class="modal-login__login" type="email" name="login" id="login-login"
@@ -73,7 +73,7 @@
                     <p class="modal-login__input">
                       <label class="visually-hidden" for="login-password">Пароль</label>
                       <input class="modal-login__password" type="password" name="password" id="login-password"
-                        placeholder="******">
+                        placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
                     </p>
                     <div class="modal-login__wrapper">
                       <button class="button" type="submit">Войти</button>
@@ -85,7 +85,7 @@
                   </form>
                 </section>
               </li>
-              <li class="user-navigation__item">
+              <li class="user-navigation__item user-navigation__item-cart">
                 <a class="user-navigation__button cart-button" href="#">Пусто</a>
               </li>
             </ul>
@@ -107,12 +107,11 @@
           <ul class="slider__list">
             <li class="slider__item">
               <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
-              <img src="" alt="">
               <a class="slider__button button" href="#">Давайте оба!</a>
             </li>
           </ul>
           <div class="slider__control">
-            <button class="slider__control-button" type="button"></button>
+            <button class="slider__control-button slider__control-button--current" type="button"></button>
             <button class="slider__control-button" type="button"></button>
             <button class="slider__control-button" type="button"></button>
           </div>
@@ -140,35 +139,35 @@
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="hits__list">
             <li class="hits__item">
-              <img class="hits__image" src="img/cream-lime.png" alt="" width="267" height="267">
+              <img class="hits__image" src="img/cream-lime.png" alt="изображение товара" width="267" height="267">
               <a class="hits__text" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <p class="hits__price"><span class="hits__price-bold">310 &#8381;</span>/кг</p>
               <div class="hits__button-wrapper">
-                <a class="hits__button button" type="button">Быстрый просмотр</a>
+                <a class="hits__button button">Быстрый просмотр</a>
               </div>
             </li>
             <li class="hits__item">
-              <img class="hits__image" src="img/cream-chocolate.png" alt="" width="267" height="267">
+              <img class="hits__image" src="img/cream-chocolate.png" alt="изображение товара" width="267" height="267">
               <a class="hits__text" href="#">Сливочно-кофейное с кусочками шоколада</a>
               <p class="hits__price"><span class="hits__price-bold">380 &#8381;</span>/кг</p>
               <div class="hits__button-wrapper">
-                <a class="hits__button button" type="button">Быстрый просмотр</a>
+                <a class="hits__button button">Быстрый просмотр</a>
               </div>
             </li>
             <li class="hits__item">
-              <img class="hits__image" src="img/cream-strawberry.png" alt="" width="267" height="267">
+              <img class="hits__image" src="img/cream-strawberry.png" alt="изображение товара" width="267" height="267">
               <a class="hits__text" href="#">Сливочно-клубничное <br>с присыпкой из белого шоколада</a>
               <p class="hits__price"><span class="hits__price-bold">355 &#8381;</span>/кг</p>
               <div class="hits__button-wrapper">
-                <a class="hits__button button" type="button">Быстрый просмотр</a>
+                <a class="hits__button button">Быстрый просмотр</a>
               </div>
             </li>
             <li class="hits__item">
-              <img class="hits__image" src="img/cream-caramel.png" alt="" width="267" height="267">
+              <img class="hits__image" src="img/cream-caramel.png" alt="изображение товара" width="267" height="267">
               <a class="hits__text" href="#">Сливочное крем-брюле <br>с карамельной подливкой</a>
               <p class="hits__price"><span class="hits__price-bold">415 &#8381;</span>/кг</p>
               <div class="hits__button-wrapper">
-                <a class="hits__button button" type="button">Быстрый просмотр</a>
+                <a class="hits__button button">Быстрый просмотр</a>
               </div>
             </li>
           </ul>
@@ -225,7 +224,7 @@
                   что у нас происходит.
                   Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
-                <form action="" method="GET" id="subscription-form">
+                <form action="https://echo.htmlacademy.ru" method="GET" id="subscription-form">
                   <p class="subscription__input">
                     <input class="subscription__email" type="email" placeholder="email@example.com">
                     <button class="subscription__button button" type="submit">Отправить</button>
@@ -236,11 +235,10 @@
           </section>
         </div>
       </div>
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <img class="contacts__map" src="img/map.png"
-          alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург" width="1200"
-          height="430">
+    </div>
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="container contacts-container">
         <div class="contacts__info">
           <p class="contacts__text">Адрес главного офиса <br>и офлайн-магазина:<br> <span class="contacts__adsress">ул.
               Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
@@ -248,14 +246,23 @@
             <a class="contacts__phone" href="tel:+788124502525">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="contacts__button button" href="#" type="button">Форма обратной связи</a>
+          <a class="contacts__button button" href="#">Форма обратной связи</a>
         </div>
-      </section>
+        <img class="contacts__map" src="img/map.png"
+          alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург" width="1200"
+          height="430">
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.45272211514!2d30.322586059865706!3d59.93856062541775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604079583016!5m2!1sru!2sru"
+        height="430" style="border:0; width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </section>
+
   </main>
   <footer class="main-footer">
     <div class="container">
       <div class="footer-wrapper">
-        <ul class="social-list">
+        <ul class="social-list footer-wrapper__social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Facebook</span>
@@ -310,8 +317,8 @@
             </a>
           </li>
         </ul>
-        <ul class="footer-info">
-          <li class="footer-info__item">
+        <ul class="footer-info footer-wrapper__footer-info">
+          <li class="footer-info__item footer-info__item-heart">
             <a class="footer-info__link" href="#"><b>Для поставщиков</b></a>
           </li>
           <li class="footer-info__item">
@@ -334,51 +341,21 @@
     </div>
   </footer>
 
-  <!-- <section class="modal modal-login">
-    <h2 class="visually-hidden">Личный кабинет</h2>
-    <form action="" method="POST" id="form-login">
-      <p class="modal-login__input">
-        <label class="visually-hidden" for="login-login">Логин</label>
-        <input class="modal-login__login" type="email" name="login" id="login-login" placeholder="email@example.com">
-      </p>
-      <p class="modal-login__input">
-        <label class="visually-hidden" for="login-password">Пароль</label>
-        <input class="modal-login__password" type="password" name="password" id="login-password" placeholder="******">
-      </p>
-      <div class="modal-login__wrapper">
-        <button class="button" type="submit">Войти</button>
-        <div class="modal-login__inner-wrapper">
-          <a class="modal-login__link" href="#">Забыли пароль?</a>
-          <a class="modal-login__link" href="#">Новая регистрация</a>
-        </div>
-      </div>
-    </form>
-  </section>
-
-  <section class="modal modal-search">
-    <h2 class="visually-hidden">Поиск</h2>
-    <form action="" method="GET">
-      <label class="visually-hidden" for="search-input">Поиск</label>
-      <input class="modal-search__search" type="search" id="search-input" placeholder="Крем-брюле">
-    </form>
-  </section> -->
-
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
     <p class="modal-feedback__title">Мы обязательно вам ответим!</p>
-    <form action="" method="POST">
+    <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="GET">
       <p class="modal-feedback__input">
         <label class="visually-hidden">Имя</label>
         <input class="modal-feedback__name" type="text" placeholder="Ваше имя">
       </p>
       <p class="modal-feedback__input">
         <label class="visually-hidden">Электронный адрес</label>
-        <input class="modal-feedback__email" type="email" name="" id="" placeholder="email@example.com">
+        <input class="modal-feedback__email" type="email" placeholder="email@example.com">
       </p>
-      <p>
-        <label class="visually-hidden" for="">Отзыв</label>
-        <textarea class="modal-feedback__textarea" name="" id="" cols="30" rows="10"
-          placeholder="В свободной форме"></textarea>
+      <p class="modal-feedback__input">
+        <label class="visually-hidden">Напишите отзыв</label>
+        <textarea class="modal-feedback__textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <div class="modal-feedback__button-wrapper">
         <button class="modal-feedback__button button" type="submit">Отправить</button>
@@ -386,6 +363,9 @@
     </form>
     <button class="modal-feedback__close-button" type="button" aria-label="Закрыть"></button>
   </section>
+
+  <div class="darkBackground"></div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

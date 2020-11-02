@@ -1510,6 +1510,7 @@ img {
   display: none;
   top: 35px;
   right: 0;
+  z-index: 100;
 }
 
 .modal-cart__table {
@@ -1527,7 +1528,9 @@ img {
 
 .modal-cart__total{
   font-weight: 700;
-  text-align: end;
+  padding-top: 10px;
+  text-align: right;
+  padding-top: 10px;
 }
 
 .modal-cart__button {
@@ -1551,11 +1554,6 @@ img {
   background-color: transparent;
   background-image: url("../img/delete-product-button.svg");
 }
-
-.modal-cart__total {
-  text-align: right;
-  padding-top: 5px;
- }
 
 .modal-cart__table-row:nth-last-child(2) {
   border-bottom: 1px solid #cacac7;
@@ -1763,3 +1761,30 @@ background-color: rgba(0, 0, 0, 0.3);
   line-height: 45px;
   font-weight: 700;
 }
+
+
+.hits__text:hover,
+.catalog__text:hover,
+.footer-info__link:hover {
+  color: #FFBC9E;
+  border-color: rgba(255, 188, 158, 0.3);
+}
+
+.hits__text:active,
+.catalog__text:active,
+.footer-info__link:active {
+  color: #FFBC9E;
+  border-color: rgba(255, 188, 158, 0.3);
+}
+
+.copyright__link:hover {
+  color: #FFBC9E;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.copyright__link:active {
+  color: #FFBC9E;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+

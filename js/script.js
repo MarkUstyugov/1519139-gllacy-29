@@ -1,9 +1,15 @@
-var contactsButton = document.querySelector(".contacts__button");
-var contactsPopup = document.querySelector(".modal-feedback");
-var contactsClose = contactsPopup.querySelector(".modal-feedback__close-button");
-var contactsName = contactsPopup.querySelector(".modal-feedback__name");
-var contactsForm = contactsPopup.querySelector(".modal-feedback__form");
-var darkBackground = document.querySelector(".darkBackground");
+let contactsButton = document.querySelector(".contacts__button");
+let contactsPopup = document.querySelector(".modal-feedback");
+let contactsClose = contactsPopup.querySelector(".modal-feedback__close-button");
+let contactsName = contactsPopup.querySelector(".modal-feedback__name");
+let contactsForm = contactsPopup.querySelector(".modal-feedback__form");
+let darkBackground = document.querySelector(".darkBackground");
+let staticMap = document.querySelector(".contacts__map");
+let interactiveMap = document.querySelector(".contacts__interactive-map");
+
+staticMap.classList.add("contacts__map--off");
+interactiveMap.classList.add("contacts__interactive-map--active");
+
 
 contactsButton.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -31,3 +37,4 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+

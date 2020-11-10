@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Магазин морожного Gllacy</title>
 </head>
 
@@ -19,12 +19,10 @@
   <div class="site-wrapper bg-1">
     <header class="main-header">
       <div class="container main-header-wrapper">
-        <!-- <div class="main-header-wrapper"> -->
         <nav class="navigation">
           <a class="logo">
             <img class="logo__image" src="img/logo.svg" alt="Логотип" width="154" height="64">
           </a>
-          <!-- <div class="navigation-wrapper"> -->
           <ul class="site-navigation navigation-wrapper__site-navigation">
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="#">Каталог</a>
@@ -68,7 +66,7 @@
               <a class="user-navigation__button login-button" href="#">Вход</a>
               <section class="modal modal-login">
                 <h2 class="visually-hidden">Личный кабинет</h2>
-                <form action="https://echo.htmlacademy.ru" method="POST" id="form-login">
+                <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST" id="form-login">
                   <p class="modal-login__input">
                     <label class="visually-hidden" for="login-login">Логин</label>
                     <input class="modal-login__login" type="email" name="login" id="login-login"
@@ -93,13 +91,11 @@
               <a class="user-navigation__button cart-button" href="#">Пусто</a>
             </li>
           </ul>
-          <!-- </div> -->
         </nav>
         <p class="header-contacts">
           <span class="header-contacts__text">с 10 до 20, ежедневно</span>
           <a class="header-contacts__phone" href="tel:+788124502525">8 812 450-25-25</a>
         </p>
-        <!-- </div> -->
       </div>
     </header>
 
@@ -132,14 +128,12 @@
             <h2 class="visually-hidden">Выгодные предложения</h2>
             <div class="promo promo--raspberry-bg">
               <h3 class="promo__title">Малинка даром!</h3>
-              <p class="promo__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
-                варенья бесплатно.</p>
+              <p class="promo__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="promo__button button" href="#">Хочу варенье!</a>
             </div>
             <div class="promo promo--chocolate-bg">
               <h3 class="promo__title">Шоколадки даром!</h3>
-              <p class="promo__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
-                присыпки совершенно бесплатно.</p>
+              <p class="promo__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
               <a class="promo__button button" href="#">Хочу шоколадки!</a>
             </div>
           </section>
@@ -193,25 +187,19 @@
           </section>
           <section class="advantages main-wrapper__advantages">
             <h2 class="visually-hidden">Преимущества нашего магазина</h2>
-            <p class="advantages__title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-              производства на развес</p>
+            <p class="advantages__title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--ice-cream">
-                Все наше мороженое изготавливается на собственном производстве, с использованием современного
-                оборудования и проверенных временем технологий.
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
               </li>
               <li class="advantages__item advantages__item--cow">
-                Закупка ингредиентов производится только у проверенных фермерских хозяйств и
-                компаний, с которыми нас связывает долговременное сотрудничество.
+                Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
               </li>
               <li class="advantages__item advantages__item--leaf">
-                Для приготовления мороженого используются настоящие сливки и молоко
-                высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,
-                экологически чистого сырья.
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
               </li>
               <li class="advantages__item advantages__item--thermometer">
-                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-                мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
               </li>
             </ul>
           </section>
@@ -219,25 +207,23 @@
             <article class="blog">
               <h2 class="blog__title">Новое в нашем блоге</h2>
               <p class="blog__text">
-                <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов &nbsp; &nbsp; к столу</a>
               </p>
             </article>
             <section class="subscription">
               <h2 class="visually-hidden">Подписка на новости</h2>
-              <div class="subscription-wrapper">
-                <div class="subscription-inner-wrapper">
-                  <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
-                    самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно
-                    =)</p>
-                  <form action="https://echo.htmlacademy.ru" method="GET" id="subscription-form">
-                    <p class="subscription__input">
-                      <label class="visually-hidden" for="subscription__email">Введите ваш электронный адрес</label>
-                      <input class="subscription__email" type="email" id="subscription__email"
-                        placeholder="email@example.com">
-                      <button class="subscription__button button" type="submit">Отправить</button>
-                    </p>
-                  </form>
-                </div>
+              <div class="subscription-inner-wrapper">
+                <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                </p>
+                <form class="subscription__form" action="https://echo.htmlacademy.ru" method="GET"
+                  id="subscription-form">
+                  <p class="subscription__input">
+                    <label class="visually-hidden" for="subscription__email">Введите ваш электронный адрес</label>
+                    <input class="subscription__email" type="email" id="subscription__email"
+                      placeholder="email@example.com">
+                    <button class="subscription__button button" type="submit">Отправить</button>
+                  </p>
+                </form>
               </div>
             </section>
           </div>
@@ -247,8 +233,8 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="container contacts-container">
           <div class="contacts__info">
-            <p class="contacts__text1">Адрес главного офиса и офлайн-магазина:</p>
-            <p class="contacts__adsress">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+            <p class="contacts__adress-title">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
             <p class="contacts__text">Для заказов по телефону:
               <a class="contacts__phone" href="tel:+788124502525">8 812 450-25-25</a>
               (с 10 до 20 ежедневно)
@@ -374,7 +360,9 @@
     </section>
   </div>
   <div class="darkBackground"></div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/login.min.js"></script>
+
 </body>
 
 </html>

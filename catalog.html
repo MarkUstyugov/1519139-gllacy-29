@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Каталог</title>
 </head>
 
@@ -62,7 +62,7 @@
             <a class="user-navigation__button login-button" href="#">Вход</a>
             <section class="modal modal-login">
               <h2 class="visually-hidden">Личный кабинет</h2>
-              <form action="https://echo.htmlacademy.ru" method="POST" id="form-login">
+              <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST" id="form-login">
                 <p class="modal-login__input">
                   <label class="visually-hidden" for="login-login">Логин</label>
                   <input class="modal-login__login" type="email" name="login" id="login-login"
@@ -483,6 +483,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/login.min.js"></script>
 </body>
 
 </html>

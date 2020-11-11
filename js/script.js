@@ -7,7 +7,7 @@ let feedbackEmail = feedbackPopup.querySelector(".modal-feedback__email");
 let feedbackText = feedbackPopup.querySelector(".modal-feedback__textarea");
 let darkBackground = document.querySelector(".darkBackground");
 
-let staticMap = document.querySelector(".contacts__map");
+let staticMap = document.querySelector(".contacts__map-wrapper");
 let interactiveMap = document.querySelector(".contacts__interactive-map");
 
 let subscriptionForm = document.querySelector(".subscription__form");

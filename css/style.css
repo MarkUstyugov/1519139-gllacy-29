@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* Variables */
 :root{
   --basic-white: #ffffff;
@@ -407,7 +400,7 @@ img {
           align-items: flex-start;
   padding: 0;
   margin-left: auto;
-  margin-top: 13px;
+  margin-top: 15px;
   min-width: 340px;
 }
 
@@ -923,7 +916,7 @@ img {
 }
 
 .subscription-inner-wrapper {
-  padding: 25px 20px 37px;
+  padding: 25px 20px 35px;
   border-radius: 16px;
   background-color: var(--basic-cream);
 }
@@ -934,7 +927,7 @@ img {
   font-weight: 400;
   color: var(--black-lighter);
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1016,9 +1009,13 @@ img {
 }
 
 .contacts__map-wrapper {
-  background-color: var(--basic-white);
-  min-height: 430px;
+  height: 430px;
+  background-color: var(--black-lighter);
   position: relative;
+}
+
+.contacts__map {
+  height: auto;
 }
 
 .contacts__adress-title {
@@ -1254,7 +1251,7 @@ img {
 /* Filter */
 
 .filter-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
 }
 
@@ -1273,14 +1270,14 @@ img {
   border: none;
   padding: 0;
   margin: 0;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .filter-block__title {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   margin-left: 15px;
 }
 
@@ -1297,7 +1294,7 @@ img {
   background: none;
   border: none;
   min-height: 36px;
-  padding: 9px 32px 9px 16px;
+  padding: 9px 34px 9px 16px;
   color: var(--basic-white);
   background-color: var(--basic-transparent);
   background-image: url("../img/arrow-bottom-icon.svg");
@@ -1307,6 +1304,7 @@ img {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  max-width: 196px;
 }
 
 .filter-block__sort-menu:hover {
@@ -1388,23 +1386,31 @@ img {
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          -ms-flex-item-align: center;
+              align-self: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: var(--basic-transparent);
   border-radius: 20px;
   min-height: 36px;
-  padding-right: 20px;
 }
 
 .fat__item {
-  padding-left: 45px;
-  margin-right: 9px;
+  padding-top: 9px;
+  margin-right: 52px;
+}
+
+
+
+.fat__item:first-child {
+  margin-right: 52px;
+  margin-left: 47px;
 }
 
 .fat__item:last-child {
-  margin-right: 0;
+  margin-right: 17px;
 }
+
 
 .fat__radio {
   position: relative;
@@ -1421,8 +1427,8 @@ img {
 .fat__input + .fat__radio::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: 0px;
+  left: -34px;
+  top: -3px;
   width: 22px;
   height: 22px;
   border: 3px solid var(--transparent-special);
@@ -1434,8 +1440,8 @@ img {
 .fat__input:checked + .fat__radio::after {
   content: "";
   position: absolute;
-  left: -23px;
-  top: 7px;
+  left: -27px;
+  top: 4px;
   width: 8px;
   height: 8px;
   background-color: var(--transparent-special);
@@ -1478,19 +1484,29 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 0 17px;
+  /* padding: 0 17px; */
   list-style: none;
   min-height: 36px;
   border-radius: 18px;
   background-color: var(--basic-transparent);
 }
 
-.fillers__item {
+/* .fillers__item {
   margin-right: 25px;
+} */
+
+
+
+.fillers__item {
+  margin-right: 56px;
+}
+.fillers__item:first-child {
+  margin-left: 48px;
+  margin-right: 52px;
 }
 
 .fillers__item:last-child {
-  margin-right: 0;
+  margin-right: 19px;
 }
 
 .fillers__checkbox {
@@ -1500,7 +1516,7 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1513,8 +1529,8 @@ img {
   height: 20px;
   background-image: url("../img/checkbox-icon.svg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -31px;
 }
 
 .fillers__input:checked + .fillers__checkbox::before {
@@ -1524,8 +1540,8 @@ img {
   height: 20px;
   background-image: url("../img/checkbox-on-icon.svg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -31px;
 }
 
 .fillers__input:checked:hover + .fillers__checkbox::before {
@@ -1535,8 +1551,8 @@ img {
   height: 20px;
   background-image: url("../img/checkbox-on-icon-hover.svg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -31px;
 }
 
 .fillers__input:hover + .fillers__checkbox::before {
@@ -1546,8 +1562,8 @@ img {
   height: 20px;
   background-image: url("../img/checkbox-icon-hover.svg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -31px;
 }
 
 .fillers__input:disabled + .fillers__checkbox::before {
@@ -1557,8 +1573,8 @@ img {
   height: 20px;
   background-image: url("../img/checkbox-icon-disabled.svg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -31px;
 }
 
 .fillers__input:checked:disabled + .fillers__checkbox::before {
@@ -1568,13 +1584,13 @@ img {
   height: 20px;
   background-image: url("../img/checkbox-on-icon-disabled.svg");
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: -31px;
 }
 
 .filter__button {
   background: none;
-  padding: 8px 29px;
+  padding: 7px 27px;
   min-height: 32px;
   font-weight: 500;
   font-size: 16px;
@@ -2031,13 +2047,6 @@ img {
   position: relative;
 }
 
-.contacts__map {
-  position: relative;
-  background-color: var(--background-green);
-  display: block;
-  min-height: 430px;
-}
-
 .contacts__map--off {
   display: none;
 }
@@ -2076,7 +2085,7 @@ img {
           align-items: center;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--basic-transparent);
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .pagination__list {
@@ -2175,7 +2184,7 @@ img {
   margin-right: 26px;
   position: relative;
   text-align: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 35px;
 }
 
 .catalog__item:hover {
